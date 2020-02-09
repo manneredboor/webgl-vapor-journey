@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "target": "es6",
+    "module": "es6",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "~*": ["./src/*"]
+    },
+    "lib": [
+      "dom",
+      "es6",
+      "es2015.promise",
+      "es2017.object",
+      "es2015.collection",
+      "es2015"
+    ],
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false
+  }
+}
