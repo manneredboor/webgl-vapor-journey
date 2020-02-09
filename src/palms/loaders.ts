@@ -2,6 +2,7 @@ import * as THREE from 'three'
 import { OBJLoader2 } from 'three/examples/jsm/loaders/OBJLoader2'
 import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader'
 import { MtlObjBridge } from 'three/examples/jsm/loaders/obj2/bridge/MtlObjBridge'
+import { publicUrl } from './helpers'
 
 export const loadMaterial = (arg: { url: string }) =>
   new Promise<MTLLoader.MaterialCreator>((resolve, reject) => {
@@ -13,7 +14,7 @@ export const loadMaterial = (arg: { url: string }) =>
       wrap: THREE.MirroredRepeatWrapping,
       side: THREE.DoubleSide,
     })
-    mtlLoader.load(arg.url, mtl => {
+    mtlLoader.load(publicUrl + arg.url, mtl => {
       resolve(mtl)
     })
   })
@@ -29,7 +30,7 @@ export const loadObject = (arg: {
       objLoader.addMaterials(materials, false)
     }
     objLoader.load(
-      arg.url,
+      publicUrl + arg.url,
       obj => {
         obj.castShadow = true
         obj.receiveShadow = true

@@ -1,3 +1,8 @@
+export const publicUrl =
+  process.env.NODE_ENV === 'development'
+    ? ''
+    : 'https://manneredboor.github.io/webgl-vapor-journey/'
+
 export const random = (min: number, max: number) =>
   Math.random() * (max - min) + min
 
