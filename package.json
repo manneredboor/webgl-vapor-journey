@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "parcel build src/index.html -d docs --no-source-maps --public-url https://manneredboor.github.io/webgl-vapor-journey/",
+    "build": "parcel build src/index.html -d dist --no-source-maps --public-url https://manneredboor.github.io/webgl-vapor-journey/",
     "dev": "parcel src/index.html"
   },
   "browserslist": [
@@ -17,7 +17,6 @@
     "watcherGlob": "**"
   },
   "parcelCleanPaths": [
-    "docs",
     "dist"
   ],
   "dependencies": {
