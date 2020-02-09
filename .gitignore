@@ -5,3 +5,4 @@ webpack_stats.json
 .env
 db.json
 .cache
+dist/
