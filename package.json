@@ -22,7 +22,7 @@
   "dependencies": {
     "assets": "^3.0.1",
     "src": "^1.1.2",
-    "three": "^0.112.1",
+    "three": "^0.137.0",
     "ts-easing": "^0.2.0"
   },
   "devDependencies": {
